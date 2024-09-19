@@ -21,7 +21,7 @@ class SubtitleExtractorGUI:
         self.config = configparser.ConfigParser()
         self.interface_config = configparser.ConfigParser()
         if not os.path.exists(self.config_file):
-            # 如果没有配置文件，默认弹出语言选择界面
+            # 如果没有配置文件，默认弹出语言选择界面 NO CONFIG, CHOOSE DEFAULT LANGUAGE
             LanguageModeGUI(self).run()
         self.INTERFACE_KEY_NAME_MAP = {
             '简体中文': 'ch',
